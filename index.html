@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ------------------------- Navbar ------------------------- -->
+    <div style="background-color: #000000" id="nav">
+      <div class="nav_item">
+        <div class="nav_logo">
+          <img
+            src="./icons/amazon_logo.png"
+            alt=""
+            class="amazon_logo border"
+          />
+        </div>
+        <div
+          style="min-width: 60px; padding: 5px; margin-left: -25px"
+          class="border"
+        >
+          <div style="font-size: 12px; color: #cccccc; margin-left: 14px">
+            Deliver to
+          </div>
+          <div
+            style="
+              /* right: 13px; */
+              /* position: relative; */
+              margin-top: -6px;
+              font-weight: 600;
+              font-size: 14px;
+              color: white;
+              /* margin-top: 20px; */
+            "
+          >
+            <i class="fa-solid fa-location-dot"></i>
+            Nepal
+          </div>
+        </div>
+        <div class="search_box">
+          <select name="all" id="search_filter">
+            <option value="All" selected>All</option>
+            <option value="">Boys Fashion</option>
+            <option value="">Books</option>
+            <option value="">Baby</option>
+            <option value="">Deal</option>
+          </select>
+          <!-- <div class="input_div"> -->
+          <input
+            type="text"
+            placeholder="Search amazon"
+            style="outline: none; padding-left: 15px; font-size: 16px"
+          />
+
+          <!-- <div class="search_icon_div"> -->
+
+          <img class="search_icon" src="./icons/search.png" alt="" />
+          <!-- </div> -->
+        </div>
+
+        <div
+          style="display: flex; align-items: center; gap: 12x; padding: 0px"
+          class="border"
+        >
+          <img src="./icons/united-states-of-america.png" alt="" class="flag" />
+          <span class="flag_text">EN</span>
+        </div>
+
+        <div style="min-width: 113px; padding: 5px" class="border">
+          <div style="font-size: 12px; color: #cccccc; text-align: start">
+            Hello, sign in
+          </div>
+          <div
+            style="
+              /* right: 13px; */
+              /* position: relative; */
+              margin-top: -3px;
+              font-weight: 600;
+              font-size: 14px;
+              color: white;
+            "
+          >
+            Account & List
+          </div>
+        </div>
+        <div style="min-width: 60px; padding: 5px" class="border">
+          <div style="font-size: 12px; color: #cccccc; text-align: start">
+            Returns
+          </div>
+          <div
+            style="
+              /* right: 13px; */
+              /* position: relative; */
+              margin-top: -3px;
+              font-weight: 600;
+              font-size: 14px;
+              color: white;
+            "
+          >
+            & Order
+          </div>
+        </div>
+
+        <div class="cart_icon border" style="padding: 5px">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Cart
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------- Panel ------------------------- -->
+    <div class="panel_box">
+      <div class="panel_first border" style="margin-bottom: 2px">
+        <i class="fa-solid fa-bars menu_icon"></i>
+        <div style="font-size: 14px; font-weight: bold">All</div>
+      </div>
+      <div class="panel_second">
+        <div class="border" style="padding: 4px">Today's Deals</div>
+        <div class="border" style="padding: 4px">Customers Service</div>
+        <div class="border" style="padding: 4px">Registry</div>
+        <div class="border" style="padding: 4px">Gifts Cards</div>
+        <div class="border" style="padding: 4px">Sell</div>
+      </div>
+    </div>
+
+    <!-- ------------------------- Main-page ------------------------- -->
+
+    <div class="slide" style="position: relative"></div>
+    <div
+      style="
+        background: linear-gradient(
+          to bottom,
+          transparent,
+          rgba(227, 230, 230, 1)
+        );
+        position: absolute;
+        bottom: 210px;
+        width: 100%;
+        height: 20%;
+        z-index: -1;
+      "
+    ></div>
+    <div style="width: 95%; margin: auto">
+      <div
+        style="
+          display: flex;
+          z-index: 10;
+          justify-content: center;
+
+          align-items: center;
+
+          margin-top: 10px;
+          z-index: 2;
+          flex-wrap: wrap;
+          gap: 20px;
+        "
+      >
+        <!-- 1st -->
+        <div
+          style="
+            width: 320px;
+
+            background: white;
+          "
+        >
+          <h1
+            style="
+              padding: 20px;
+              font-size: 21px;
+              color: #0f1111;
+              font-weight: 600;
+            "
+          >
+            Gaming accessories
+          </h1>
+          <div
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: center;
+              gap: 1px;
+            "
+          >
+            <div style="display: flex">
+              <div class="card_image_text">
+                <img
+                  src="./amazon_asset/asset 6.jpeg"
+                  alt=""
+                  class="card_product_img"
+                />
+                <p style="margin-left: 15px; font-size: 12px">Headsets</p>
+              </div>
+              <div class="card_image_text">
+                <img
+                  src="./amazon_asset/asset 7.jpeg"
+                  alt=""
+                  class="card_product_img"
+                />
+                <p style="margin-left: 15px; font-size: 12px">Keyboards</p>
+              </div>
+            </div>
+            <div style="display: flex">
+              <div class="card_image_text">
+                <img
+                  src="./amazon_asset/asset 8.jpeg"
+                  alt=""
+                  class="card_product_img"
+                />
+                <p style="margin-left: 15px; font-size: 12px">Computer mice</p>
+              </div>
+              <div class="card_image_text">
+                <img
+                  src="./amazon_asset/asset 9.jpeg"
+                  alt=""
+                  class="card_product_img"
+                />
+                <p style="margin-left: 15px; font-size: 12px">Chairs</p>
+              </div>
+            </div>
+          </div>
+          <button class="card_button">See more</button>
+        </div>
+
+        <!-- 2nd -->
+
+        <div
+          style="
+            /* height: 200px; */
+            width: 320px;
+            background: white;
+
+            /* box-shadow: 1px 6px 20px rgb(135, 133, 133); */
+          "
+        >
+          <h1
+            style="
+              /* margin-left: 20px; */
+              padding: 20px;
+              font-size: 21px;
+              color: #0f1111;
+              font-weight: 600;
+              text-align: start;
+            "
+          >
+            Toys Under $30
+          </h1>
+          <div
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: center;
+              gap: 1px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <div class="card_image_text">
+                <img
+                  src="./amazon_asset/asset 10.jpeg"
+                  alt=""
+                  class="card_product_img_single"
+                />
+                <!-- <p style="margin-left: 15px; font-size: 12px">Headsets</p> -->
+              </div>
+            </div>
+            <div style="display: flex"></div>
+          </div>
+          <button class="card_button">See more</button>
+        </div>
+
+        <!-- 3rd -->
+
+        <div
+          style="
+            /* height: 200px; */
+            width: 320px;
+            background: white;
+
+            /* box-shadow: 1px 6px 20px rgb(135, 133, 133); */
+          "
+        >
+          <h1
+            style="
+              /* margin-left: 5px; */
+              text-align: start;
+              padding: 20px;
+              font-size: 21px;
+              color: #0f1111;
+              font-weight: 600;
+            "
+          >
+            Health & Personal Care
+          </h1>
+          <div
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: center;
+              gap: 1px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <div class="card_image_text">
+                <img
+                  src="./amazon_asset/asset 14.jpeg"
+                  alt=""
+                  class="card_product_img_single"
+                />
+                <!-- <p style="margin-left: 15px; font-size: 12px">Headsets</p> -->
+              </div>
+            </div>
+            <div style="display: flex"></div>
+          </div>
+          <button class="card_button">See more</button>
+        </div>
+
+        <!-- 4th -->
+
+        <div style="width: 320px">
+          <div style="display: flex; flex-direction: column; background: white">
+            <h1
+              style="
+                /* margin-left: 20px; */
+                text-align: start;
+                padding-top: 25px;
+                padding-bottom: 14px;
+
+                font-size: 20px;
+                color: #0f1111;
+                font-weight: 600;
+                padding-left: 10px;
+              "
+            >
+              Sign in for the best experience
+              <br />
+            </h1>
+            <button
+              style="
+                padding: 7px;
+                border-radius: 8px;
+                width: 90%;
+                background: rgb(249, 217, 76);
+                border: none;
+                font-size: 13px;
+                color: #0f1111;
+                margin-bottom: 10px;
+                margin-left: 15px;
+              "
+            >
+              Sign in securely
+            </button>
+            <br />
+          </div>
+
+          <div
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: center;
+              gap: 1px;
+            "
+          >
+            <!-- <div style="display: flex">
+                <div class="card_image_text">
+               
+                </div>
+           
+              </div> -->
+            <div
+              style="display: flex; justify-content: center; margin-top: 33px"
+            >
+              <div class="card_image_text">
+                <img
+                  src="./amazon_asset/asset 12.jpeg"
+                  alt=""
+                  class="card_product_img_single"
+                  style="
+                    height: 230px;
+                    width: 300px;
+                    margin-right: 25px;
+                    margin-bottom: 5px;
+                  "
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5th -->
+        <div
+          style="
+            /* height: 200px; */
+            width: 320px;
+            background: white;
+
+            /* box-shadow: 1px 6px 20px rgb(135, 133, 133); */
+          "
+        >
+          <h1
+            style="
+              padding: 20px;
+              font-size: 21px;
+              color: #0f1111;
+              font-weight: 600;
+            "
+          >
+            Electronics
+          </h1>
+
+          <img
+            src="./amazon_asset/asset 11.jpeg"
+            alt=""
+            class="card_product_img_single"
+            style="margin-left: 0px; width: 100%; text-align: center"
+          />
+
+          <button class="card_button">See more</button>
+        </div>
+
+        <!-- 6th -->
+        <div
+          style="
+            /* height: 200px; */
+            width: 320px;
+            background: white;
+
+            /* box-shadow: 1px 6px 20px rgb(135, 133, 133); */
+          "
+        >
+          <h1
+            style="
+              padding: 20px;
+              font-size: 20px;
+              color: #0f1111;
+              font-weight: 600;
+            "
+          >
+            Home & Kitchen Under $30
+          </h1>
+
+          <img
+            src="./amazon_asset/asset 13.jpeg"
+            alt=""
+            class="card_product_img_single"
+          />
+
+          <button class="card_button">See more</button>
+        </div>
+        <!-- 7th -->
+        <div
+          style="
+            /* height: 200px; */
+            width: 320px;
+            background: white;
+
+            /* box-shadow: 1px 6px 20px rgb(135, 133, 133); */
+          "
+        >
+          <h1
+            style="
+              padding: 20px;
+              font-size: 21px;
+              color: #0f1111;
+              font-weight: 600;
+            "
+          >
+            Beauty picks
+          </h1>
+
+          <img
+            src="./amazon_asset/asset 15.jpeg"
+            alt=""
+            class="card_product_img_single"
+          />
+
+          <button class="card_button">See more</button>
+        </div>
+        <!-- 8th -->
+        <div style="width: 320px; background: white">
+          <h1
+            style="
+              padding: 20px 20px 10px 15px;
+
+              font-size: 21px;
+              color: #0f1111;
+              font-weight: 600;
+            "
+          >
+            Gaming accessories
+          </h1>
+          <div
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: center;
+              gap: 1px;
+            "
+          >
+            <div style="display: flex; gap: 13px">
+              <div class="card_image_text">
+                <img
+                  src="./amazon_asset/asset 16.jpeg"
+                  alt=""
+                  class="card_product_img"
+                  style="width: 135px; height: 113px"
+                />
+                <p style="margin-left: 15px; font-size: 12px">Headsets</p>
+              </div>
+              <div class="card_image_text">
+                <img
+                  src="./amazon_asset/asset 17.jpeg"
+                  alt=""
+                  class="card_product_img"
+                  style="width: 135px; height: 113px"
+                />
+                <p style="margin-left: 15px; font-size: 12px">Keyboards</p>
+              </div>
+            </div>
+            <div style="display: flex; gap: 13px">
+              <div class="card_image_text">
+                <img
+                  src="./amazon_asset/asset 18.jpeg"
+                  alt=""
+                  class="card_product_img"
+                  style="width: 135px; height: 113px"
+                />
+                <p style="margin-left: 15px; font-size: 12px">Computer mice</p>
+              </div>
+              <div class="card_image_text">
+                <img
+                  src="./amazon_asset/asset 19.jpeg"
+                  alt=""
+                  class="card_product_img"
+                  style="width: 135px; height: 113px"
+                />
+                <p style="margin-left: 15px; font-size: 12px">Chairs</p>
+              </div>
+            </div>
+          </div>
+          <button class="card_button">See more</button>
+        </div>
+      </div>
+    </div>
+    <!-- mid product books card -->
+
+    <div class="mid_product_card" style="margin-bottom: 15px; margin-top: 15px">
+      <div class="mid_container">
+        <div class="mid_product_header">
+          <h1>Exciting deals</h1>
+          <button class="card_button">See all deals</button>
+        </div>
+
+        <div class="mid_books_cards">
+          <!-- 1st -->
+          <div class="books_container">
+            <div class="mid_books_img">
+              <img src="./amazon_asset/asset 21.jpeg" alt="" />
+            </div>
+
+            <div class="books_text">
+              <div class="books_deal">
+                <div class="offer">25% off</div>
+                <div class="deal">Deal</div>
+              </div>
+
+              <div class="books_price">
+                <div class="book_main_price">
+                  <span class="book_main_price_dollor">$</span> 12.74
+                </div>
+                <div class="list_price">List price: <del>$16.99</del></div>
+              </div>
+              <div class="book_mini_dec">
+                The best book avilable on the mark...
+              </div>
+            </div>
+          </div>
+
+          <!-- 2nd -->
+          <div class="books_container">
+            <div class="mid_books_img">
+              <img src="./amazon_asset/asset 22.jpeg" alt="" />
+            </div>
+
+            <div class="books_text">
+              <div class="books_deal">
+                <div class="offer">30% off</div>
+                <div class="deal">Deal</div>
+              </div>
+
+              <div class="books_price">
+                <div class="book_main_price">
+                  <span class="book_main_price_dollor">$</span> 41.89
+                </div>
+                <div class="list_price">List price: <del>$60.00</del></div>
+              </div>
+              <div class="book_mini_dec">
+                Sun House by David James Duncan...
+              </div>
+            </div>
+          </div>
+
+          <!-- 3rd -->
+          <div class="books_container">
+            <div class="mid_books_img">
+              <img src="./amazon_asset/asset 23.jpeg" alt="" />
+            </div>
+
+            <div class="books_text">
+              <div class="books_deal">
+                <div class="offer">20% off</div>
+                <div class="deal">Deal</div>
+              </div>
+
+              <div class="books_price">
+                <div class="book_main_price">
+                  <span class="book_main_price_dollor">$</span> 7.98
+                </div>
+                <div class="list_price">List price: <del>$9.99</del></div>
+              </div>
+              <div class="book_mini_dec">
+                First grade math with confidence...
+              </div>
+            </div>
+          </div>
+
+          <!-- 4th -->
+          <div class="books_container">
+            <div class="mid_books_img">
+              <img src="./amazon_asset/asset 24.jpeg" alt="" />
+            </div>
+
+            <div class="books_text">
+              <div class="books_deal">
+                <div class="offer">40% off</div>
+                <div class="deal">Deal</div>
+              </div>
+
+              <div class="books_price">
+                <div class="book_main_price">
+                  <span class="book_main_price_dollor">$</span> 26.99
+                </div>
+                <div class="list_price">List price: <del>$45.00</del></div>
+              </div>
+              <div class="book_mini_dec">Cahoots 50th Anniversary....</div>
+            </div>
+          </div>
+
+          <!-- 5th -->
+          <div class="books_container">
+            <div class="mid_books_img">
+              <img src="./amazon_asset/asset 26.jpeg" alt="" />
+            </div>
+
+            <div class="books_text">
+              <div class="books_deal">
+                <div class="offer">38% off</div>
+                <div class="deal">Deal</div>
+              </div>
+
+              <div class="books_price">
+                <div class="book_main_price">
+                  <span class="book_main_price_dollor">$</span> 16.79
+                </div>
+                <div class="list_price">List price: <del>$26.99</del></div>
+              </div>
+              <div class="book_mini_dec">
+                Katherine center hellow stanger...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- lower mid main_page copy -->
+
+    <div style="width: 95%; margin: auto">
+      <div
+        style="
+          display: flex;
+          z-index: 10;
+          justify-content: center;
+
+          align-items: center;
+
+          margin-top: 10px;
+          z-index: 2;
+          flex-wrap: wrap;
+          gap: 20px;
+        "
+      >
+        <!-- 1st -->
+
+        <div style="width: 320px; background: white">
+          <h1
+            style="
+              padding: 20px;
+              font-size: 21px;
+              color: #0f1111;
+              font-weight: 600;
+            "
+          >
+            New arrivals in Toys
+          </h1>
+
+          <img
+            src="./amazon_asset/asset 70.jpeg"
+            alt=""
+            class="card_product_img_single"
+          />
+          <button class="card_button">Shop now</button>
+        </div>
+        <!-- 2nd -->
+
+        <div style="width: 320px; background: white">
+          <h1
+            style="
+              padding: 20px;
+              font-size: 21px;
+              color: #0f1111;
+              font-weight: 600;
+            "
+          >
+            Discover fashion trends
+          </h1>
+
+          <img
+            src="./amazon_asset/asset 71.jpeg"
+            alt=""
+            class="card_product_img_single"
+          />
+          <button class="card_button">Shop now</button>
+        </div>
+
+        <!-- 3rd -->
+
+        <div style="width: 320px; background: white">
+          <h1
+            style="
+              padding: 20px;
+              font-size: 21px;
+              color: #0f1111;
+              font-weight: 600;
+            "
+          >
+            For your Fitness Needs
+          </h1>
+
+          <img
+            src="./amazon_asset/asset 72.jpeg"
+            alt=""
+            class="card_product_img_single"
+          />
+          <button class="card_button">Shop now</button>
+        </div>
+
+        <!-- 4th -->
+
+        <div style="width: 320px; background: white">
+          <h1
+            style="
+              padding: 20px;
+              font-size: 21px;
+              color: #0f1111;
+              font-weight: 600;
+            "
+          >
+            Home refresh ideas
+          </h1>
+
+          <img
+            src="./amazon_asset/asset 73.jpeg"
+            alt=""
+            class="card_product_img_single"
+          />
+          <button class="card_button">Shop now</button>
+        </div>
+
+        <!-- 5th -->
+        <div
+          style="
+            width: 320px;
+
+            background: white;
+          "
+        >
+          <h1
+            style="
+              padding: 20px;
+              font-size: 21px;
+              color: #0f1111;
+              font-weight: 600;
+            "
+          >
+            Gaming merchandise
+          </h1>
+          <div
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: center;
+              gap: 1px;
+            "
+          >
+            <div style="display: flex">
+              <div class="card_image_text">
+                <img
+                  src="./amazon_asset/asset 82.jpeg"
+                  alt=""
+                  class="card_product_img"
+                />
+                <p style="margin-left: 15px; font-size: 12px">Apparel</p>
+              </div>
+              <div class="card_image_text">
+                <img
+                  src="./amazon_asset/asset 83.jpeg"
+                  alt=""
+                  class="card_product_img"
+                />
+                <p style="margin-left: 15px; font-size: 12px">Hats</p>
+              </div>
+            </div>
+            <div style="display: flex">
+              <div class="card_image_text">
+                <img
+                  src="./amazon_asset/asset 84.jpeg"
+                  alt=""
+                  class="card_product_img"
+                />
+                <p style="margin-left: 15px; font-size: 12px">Action figures</p>
+              </div>
+              <div class="card_image_text">
+                <img
+                  src="./amazon_asset/asset 85.jpeg"
+                  alt=""
+                  class="card_product_img"
+                />
+                <p style="margin-left: 15px; font-size: 12px">Mugs</p>
+              </div>
+            </div>
+          </div>
+          <button class="card_button">See more</button>
+        </div>
+
+        <!-- 6th -->
+        <div style="width: 320px; background: white">
+          <h1
+            style="
+              padding: 20px;
+              padding-top: 12px;
+              font-size: 21px;
+              color: #0f1111;
+              font-weight: 600;
+              line-height: 26px;
+            "
+          >
+            Deals in Tools and Home Improvement
+          </h1>
+
+          <img
+            src="./amazon_asset/asset 86.jpeg"
+            alt=""
+            class="card_product_img_single"
+          />
+          <button
+            class="card_button"
+            style="margin-top: 20px; margin-bottom: 11px"
+          >
+            Shop now
+          </button>
+        </div>
+        <!-- 7th -->
+        <div style="width: 320px; background: white">
+          <h1
+            style="
+              padding: 20px;
+              font-size: 21px;
+              color: #0f1111;
+              font-weight: 600;
+            "
+          >
+            Spring new arrivals
+          </h1>
+
+          <img
+            src="./amazon_asset/asset 87.jpeg"
+            alt=""
+            class="card_product_img_single"
+          />
+          <button class="card_button">Discover more</button>
+        </div>
+        <!-- 8th -->
+        <div style="width: 320px; background: white">
+          <h1
+            style="
+              padding: 20px;
+              font-size: 21px;
+              color: #0f1111;
+              font-weight: 600;
+            "
+          >
+            Shop Pet supplies
+          </h1>
+
+          <img
+            src="./amazon_asset/asset 88.jpeg"
+            alt=""
+            class="card_product_img_single"
+          />
+          <button class="card_button">See more</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- bottom mid product books card copy  -->
+
+    <div class="mid_product_card" style="width: 100%">
+      <div class="line"></div>
+      <div class="mid_container">
+        <div class="mid_product_header" style="margin-top: -12px">
+          <h1>Deals Under $25</h1>
+          <button class="card_button">See more</button>
+        </div>
+
+        <div class="mid_books_cards">
+          <!-- 1st -->
+
+          <div class="books_container" id="books_container">
+            <div class="mid_books_img" id="mid_books_img">
+              <img src="./amazon_asset/asset 74.jpeg" alt="" />
+            </div>
+
+            <div class="books_text">
+              <div class="books_deal">
+                <div class="offer">33% off</div>
+                <div class="deal">Deal</div>
+              </div>
+
+              <div class="books_price">
+                <div class="book_main_price">
+                  <span class="book_main_price_dollor">$</span> 14.79
+                </div>
+                <div class="list_price">List price: <del>$22.00</del></div>
+              </div>
+              <div class="book_mini_dec">
+                Amaro the book by Brad Thomas Parsons...
+              </div>
+            </div>
+          </div>
+
+          <!-- 2nd -->
+
+          <div class="books_container" id="books_container">
+            <div class="mid_books_img" id="mid_books_img">
+              <img src="./amazon_asset/asset 75.jpeg" alt="" />
+            </div>
+
+            <div class="books_text">
+              <div class="books_deal">
+                <div class="offer">20% off</div>
+                <div class="deal">Deal</div>
+              </div>
+
+              <div class="books_price">
+                <div class="book_main_price">
+                  <span class="book_main_price_dollor">$</span> 10.39
+                </div>
+                <div class="list_price">List price: <del>$12.99</del></div>
+              </div>
+              <div class="book_mini_dec">
+                Outdoor kids in an inside world (Steven Rinella)...
+              </div>
+            </div>
+          </div>
+
+          <!-- 3rd -->
+
+          <div class="books_container" id="books_container">
+            <div class="mid_books_img" id="mid_books_img">
+              <img src="./amazon_asset/asset 76.jpeg" alt="" />
+            </div>
+
+            <div class="books_text">
+              <div class="books_deal">
+                <div class="offer">27% off</div>
+                <div class="deal">Deal</div>
+              </div>
+
+              <div class="books_price">
+                <div class="book_main_price">
+                  <span class="book_main_price_dollor">$</span> 16.67
+                </div>
+                <div class="list_price">List price: <del>$22.97</del></div>
+              </div>
+              <div class="book_mini_dec">
+                Dress jeans disco dating the book by Frank maraschello...
+              </div>
+            </div>
+          </div>
+
+          <!-- 4th -->
+
+          <div class="books_container" id="books_container">
+            <div class="mid_books_img" id="mid_books_img">
+              <img src="./amazon_asset/asset 77.jpeg" alt="" />
+            </div>
+
+            <div class="books_text">
+              <div class="books_deal">
+                <div class="offer">43% off</div>
+                <div class="deal">Deal</div>
+              </div>
+
+              <div class="books_price">
+                <div class="book_main_price">
+                  <span class="book_main_price_dollor">$</span> 17.20
+                </div>
+                <div class="list_price">List price: <del>$29.95</del></div>
+              </div>
+              <div class="book_mini_dec">
+                Once upon a dream the book by Phellip Keveren...
+              </div>
+            </div>
+          </div>
+
+          <!-- 5th -->
+
+          <div class="books_container" id="books_container">
+            <div class="mid_books_img" id="mid_books_img">
+              <img src="./amazon_asset/asset 61.jpeg" alt="" />
+            </div>
+
+            <div class="books_text">
+              <div class="books_deal">
+                <div class="offer">25% off</div>
+                <div class="deal">Deal</div>
+              </div>
+
+              <div class="books_price">
+                <div class="book_main_price">
+                  <span class="book_main_price_dollor">$</span> 12.74
+                </div>
+                <div class="list_price">List price: <del>$16.99</del></div>
+              </div>
+              <div class="book_mini_dec">
+                Billionaire habits for entrepreneurs...
+              </div>
+            </div>
+          </div>
+
+          <!-- 6th -->
+
+          <div class="books_container" id="books_container">
+            <div class="mid_books_img" id="mid_books_img">
+              <img src="./amazon_asset/asset 65.jpeg" alt="" />
+            </div>
+
+            <div class="books_text">
+              <div class="books_deal">
+                <div class="offer">30% off</div>
+                <div class="deal">Deal</div>
+              </div>
+
+              <div class="books_price">
+                <div class="book_main_price">
+                  <span class="book_main_price_dollor">$</span> 11.92
+                </div>
+                <div class="list_price">List price: <del>$16.99</del></div>
+              </div>
+              <div class="book_mini_dec">Billionaire CODES....</div>
+            </div>
+          </div>
+
+          <!-- 7th -->
+          <div class="books_container" id="books_container">
+            <div class="mid_books_img" id="mid_books_img">
+              <img src="./amazon_asset/asset 68.jpeg" alt="" />
+            </div>
+
+            <div class="books_text">
+              <div class="books_deal">
+                <div class="offer">15% off</div>
+                <div class="deal">Deal</div>
+              </div>
+
+              <div class="books_price">
+                <div class="book_main_price">
+                  <span class="book_main_price_dollor">$</span> 16.99
+                </div>
+                <div class="list_price">List price: <del>$19.99</del></div>
+              </div>
+              <div class="book_mini_dec">
+                Long Haul the journey of the women book written by Zarifa
+                Teixeira...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div style="display: flex; justify-content: space-between">
+        <p
+          style="
+            padding-top: 40px;
+            padding-bottom: 35px;
+            font-size: 12px;
+            font-style: italic;
+            margin-left: 40px;
+          "
+        >
+          After viewing product detail pages, look here to find an easy way to
+          navigate back to pages you are interested in.
+        </p>
+        <div style="display: inline-block; margin-top: 3px">
+          <span style="margin-right: -15px; color: #0066c0"> › </span>
+          <button
+            class="card_button"
+            style="
+              border: none;
+              background: white;
+              width: 80px;
+              text-align: left;
+              margin-right: 50px;
+              font-size: 10px;
+              font-weight: 600;
+            "
+          >
+            View or edit your browsing history
+          </button>
+        </div>
+      </div>
+      <div class="line"></div>
+    </div>
+
+    <!-- back to top -->
+
+    <a href="#nav">
+      <div class="back_to_top">Back to top</div>
+    </a>
+
+    <!-- Footer -->
+    <div style="background: rgb(37, 47, 61)">
+      <div class="footer">
+        <div class="logo nav_logo">
+          <img
+            src="./icons/amazon_logo.png"
+            class="amazon_logo logo_margin"
+            alt=""
+          />
+        </div>
+        <button class="footer_button">
+          <i class="fa-solid fa-globe" style="padding-right: 5px"></i>
+          English
+        </button>
+        <button class="footer_button">$ USD - Dollar</button>
+        <button
+          class="footer_button"
+          style="
+            text-align: start;
+            padding: 6px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+          "
+        >
+          <img
+            src="./icons/united-states-of-america.png"
+            alt=""
+            class="flag"
+            style="height: 20px; margin-left: 3px"
+          />
+          United States
+        </button>
+      </div>
+      <div class="copy_right">&copy 1996-2023, Amazon.com, Inc or its affiliates</div>
+    </div>
+  </body>
+</html>
